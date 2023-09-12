@@ -17,6 +17,7 @@ export const Main = () => {
             initialRouteName={'Graph'}
             screenOptions={{
                 tabBarActiveTintColor: 'black',
+                headerShown: false,
             }}
         >
             <Tab.Screen
