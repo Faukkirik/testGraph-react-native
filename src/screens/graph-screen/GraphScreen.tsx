@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {StyleSheet, Text, View} from "react-native";
 import {ButtonWithoutFeedback} from "../../components/ui/button/ButtonWithoutFeedback";
 import {SettingSvg} from "../../svg/tab-svg/SettingSVG";
@@ -10,7 +10,6 @@ export const GraphScreen = () => {
     const dispatch = useAppDispatch()
     const arrData = useAppSelector((state)=>state.root.arrData)
     const touch = useAppSelector((state)=>state.root.touchData)
-    //const [touch, setTouch] = useState<TouchDataType>('week')
     const previewData = touch==='day' ? arrData.day : touch === 'week' ? arrData.week : touch === 'month' ? arrData.month : touch === 'year' ? arrData.year : arrData.week
     return (
         <View style={styles.container}>

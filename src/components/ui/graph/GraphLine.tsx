@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from "react-native";
+import {StyleSheet, View} from "react-native";
 import {VictoryChart, VictoryLine, VictoryTheme} from "victory-native";
 import {VictoryNativeBrushLine} from "victory-native/src/components/victory-brush-line";
 type GraphLineType = {
@@ -15,7 +15,6 @@ export const GraphLine = (props: GraphLineType) => {
                 maxDomain={{y: 1200}}
             >
                 <VictoryLine
-                    label={null}
                     domain={{ y:[950 , 1050]}}
                     animate={{
                         duration: 500,

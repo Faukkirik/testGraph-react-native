@@ -1,5 +1,5 @@
-import React, {ComponentPropsWithoutRef, ElementType, ReactNode} from 'react';
-import {Pressable, PressableProps, StyleProp, StyleSheet, Text, View, ViewStyle} from "react-native";
+import React, {ReactNode} from 'react';
+import {Pressable, PressableProps, StyleProp, Text, View, ViewStyle} from "react-native";
 
 export type ButtonPropsType = {
     text?: ReactNode
@@ -22,11 +22,3 @@ export const ButtonWithoutFeedback = (props: ButtonPropsType) => {
             </Pressable>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        flexDirection: 'row',
-    },
-});

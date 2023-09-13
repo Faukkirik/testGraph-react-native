@@ -1,5 +1,4 @@
 import React from 'react';
-import {StyleSheet, Text, View} from "react-native";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import {RootStack} from "./screens/types/type";
 import {GraphScreen} from "./screens/graph-screen/GraphScreen";
@@ -53,10 +52,3 @@ export const Main = () => {
         </Tab.Navigator>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-    },
-});
